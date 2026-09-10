@@ -1,4 +1,4 @@
-# Nexa — AI Automation Portfolio
+# Salesfixr — AI Automation Portfolio
 
 Interactive agency portfolio for **AI automation for businesses**, with workflows orchestrated in **n8n**. Cream, navy, and coral visual language; 3D hero and an n8n node graph on the homepage. Built to nest into a larger agency site later.
 

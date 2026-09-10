@@ -107,6 +107,7 @@ img {
   gap: 16px;
   padding: 18px 28px 10px;
   background: linear-gradient(to bottom, var(--bg) 70%, transparent);
+  overflow: visible;
 }
 
 .nav-left,
@@ -114,6 +115,18 @@ img {
   display: flex;
   align-items: center;
   gap: 8px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.wordmark {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
 }
 
 .logo {

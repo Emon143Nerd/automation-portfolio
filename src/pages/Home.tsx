@@ -119,7 +119,7 @@ export function Home() {
             <span className="eyebrow">From inbox to outcome</span>
             <h2 className="display">See how your AI team gets the job done.</h2>
             <p className="lede">
-              Nexa deploys dedicated agents into the tools you already run — giving the business real-time intelligence,
+              Salesfixr deploys dedicated agents into the tools you already run — giving the business real-time intelligence,
               automation, and a clean audit trail.
             </p>
             <div className="accordion">
@@ -160,7 +160,7 @@ export function Home() {
       </section>
 
       <section className="section narrow">
-        <span className="eyebrow">Why Nexa</span>
+        <span className="eyebrow">Why Salesfixr</span>
         <h2 className="display tight">Key features that power a smarter operation</h2>
         <p className="lede">
           Task-specific agents drop into your workflow — handling conversations, quotes, reporting, and internal

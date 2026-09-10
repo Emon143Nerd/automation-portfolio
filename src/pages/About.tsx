@@ -7,7 +7,7 @@ export function About() {
         <span className="eyebrow">About</span>
         <h1>An AI workforce, designed like a product.</h1>
         <p className="lede">
-          Nexa is the automation studio inside a larger agency. We design, deploy, and tune n8n-powered agents that sit
+          Salesfixr is the automation studio inside a larger agency. We design, deploy, and tune n8n-powered agents that sit
           in the tools your team already lives in — with the same visual language you’ll see across the parent brand later.
         </p>
         <ContactIcons />

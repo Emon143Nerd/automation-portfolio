@@ -1,5 +1,5 @@
 export const agency = {
-  name: 'Nexa',
+  name: 'Salesfixr',
   tagline: 'AI automation studio',
   parentNote: 'A vertical of the agency — built to nest into the larger site later.',
 }

@@ -36,8 +36,9 @@ export function Layout() {
       ) : null}
       <header className={`nav${open ? ' open' : ''}`}>
         <div className="nav-left">
-          <NavLink to="/" className="logo" aria-label="Nexa home">
-            NX
+          <NavLink to="/" className="brand" aria-label="Salesfixr home">
+            <span className="logo">SF</span>
+            <span className="wordmark">Salesfixr</span>
           </NavLink>
           <nav className="nav-links">
             {nav.map((item) => (
@@ -60,10 +61,10 @@ export function Layout() {
       <Outlet />
       <footer className="footer">
         <div>
-          <strong>Nexa</strong> — AI automation for businesses, orchestrated in n8n.
+          <strong>Salesfixr</strong> — AI automation for businesses, orchestrated in n8n.
           <ContactIcons />
         </div>
-        <div>© {new Date().getFullYear()} Nexa Studio</div>
+        <div>© {new Date().getFullYear()} Salesfixr</div>
       </footer>
       <a className="wa-fab" href={contact.whatsapp} target="_blank" rel="noreferrer" aria-label="Chat on WhatsApp">
         <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden>

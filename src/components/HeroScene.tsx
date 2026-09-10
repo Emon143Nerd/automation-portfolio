@@ -46,7 +46,7 @@ function SceneContent({ pointer }: { pointer: React.MutableRefObject<{ x: number
           <RoundedBox args={[1.18, 1.18, 1.18]} radius={0.18} smoothness={6}>
             <meshStandardMaterial color={navyHi} roughness={0.32} metalness={0.18} />
           </RoundedBox>
-          <Face label="NX" color={navyHi} />
+          <Face label="SF" color={navyHi} />
         </group>
       </Float>
 
