@@ -1,7 +1,7 @@
 import { NavLink, Outlet, useLocation } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { contact, nav } from '../data'
-import { ContactStrip } from './ContactStrip'
+import { ContactIcons, ContactMenu } from './ContactIcons'
 
 export function Layout() {
   const [open, setOpen] = useState(false)
@@ -45,16 +45,10 @@ export function Layout() {
                 {item.label}
               </NavLink>
             ))}
-            <a href={contact.whatsapp} target="_blank" rel="noreferrer">
-              WhatsApp
-            </a>
-            <a href={contact.phoneHref}>{contact.phone}</a>
           </nav>
         </div>
         <div className="nav-right">
-          <a className="chip phone-chip" href={contact.phoneHref}>
-            {contact.phone}
-          </a>
+          <ContactMenu />
           <NavLink className="ghost-btn" to="/book">
             Book a demo
           </NavLink>
@@ -67,12 +61,14 @@ export function Layout() {
       <footer className="footer">
         <div>
           <strong>Nexa</strong> — AI automation for businesses, orchestrated in n8n.
-          <ContactStrip />
+          <ContactIcons />
         </div>
         <div>© {new Date().getFullYear()} Nexa Studio</div>
       </footer>
       <a className="wa-fab" href={contact.whatsapp} target="_blank" rel="noreferrer" aria-label="Chat on WhatsApp">
-        WA
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden>
+          <path d="M12 3.2A8.7 8.7 0 0 0 4.6 16.3L3.7 20.3l4.1-.9A8.7 8.7 0 1 0 12 3.2Z" />
+        </svg>
       </a>
     </div>
   )

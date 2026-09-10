@@ -41,23 +41,22 @@ npm run preview
 
 ## Contact
 
-Listed on the home hero, About, Book a demo, footer, and the WhatsApp button.
+The phone number is not shown in the UI. Open the contact icon in the header to reach Call, WhatsApp, email, and Facebook. A WhatsApp button stays on the home hero and as a floating action.
 
 | | |
 | --- | --- |
-| Phone | [+8801630175225](tel:+8801630175225) |
-| WhatsApp | [wa.me/8801630175225](https://wa.me/8801630175225) |
+| WhatsApp | [Chat on WhatsApp](https://wa.me/8801630175225) |
 | Email | [bytestackpro@gmail.com](mailto:bytestackpro@gmail.com), [salesfixr@gmail.com](mailto:salesfixr@gmail.com) |
 | Facebook | [facebook.com/share/14t48hS34wa](https://www.facebook.com/share/14t48hS34wa/) |
 
-Copy lives in `src/data.ts` (`contact` object).
+Copy lives in `src/data.ts`. Icons and the header menu are in `src/components/ContactIcons.tsx`.
 
 ## Layout
 
 - `src/pages/` — routes
 - `src/components/HeroScene.tsx` — homepage 3D ring and cubes
 - `src/components/N8nScene.tsx` — interactive n8n graph
-- `src/components/ContactStrip.tsx` — shared contact chips
+- `src/components/ContactIcons.tsx` — header contact menu and icon links
 - `src/index.css` — design tokens and responsive layout
 
 ## Deploy

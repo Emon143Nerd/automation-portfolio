@@ -1,5 +1,5 @@
 import { useState, type FormEvent } from 'react'
-import { ContactStrip } from '../components/ContactStrip'
+import { ContactIcons } from '../components/ContactIcons'
 import { contact } from '../data'
 
 export function Book() {
@@ -18,12 +18,12 @@ export function Book() {
         <p className="lede">
           A 30-minute working session. We’ll map one inbox, one CRM, and the first n8n workflow that should live there.
         </p>
-        <ContactStrip />
+        <ContactIcons />
       </section>
       <section className="section narrow book-grid">
         {sent ? (
           <p className="success">
-            Request received. Reach us anytime on WhatsApp at {contact.phone} or email {contact.emails[0]}.
+            Request received. Reach us anytime on WhatsApp or email {contact.emails[0]}.
           </p>
         ) : (
           <form className="form" onSubmit={onSubmit}>
@@ -46,7 +46,7 @@ export function Book() {
           <div className="agent-kicker">Direct line</div>
           <h2>Prefer to skip the form?</h2>
           <p className="lede">Call, WhatsApp, or mail the studio. Sales and project inboxes both land with the same team.</p>
-          <ContactStrip />
+          <ContactIcons />
         </aside>
       </section>
     </main>

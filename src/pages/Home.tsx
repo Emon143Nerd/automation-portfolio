@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { ContactStrip } from '../components/ContactStrip'
 import { HeroScene } from '../components/HeroScene'
 import { N8nScene } from '../components/N8nScene'
 import {
@@ -47,7 +46,6 @@ export function Home() {
                 WhatsApp
               </a>
             </div>
-            <ContactStrip compact />
             <article className="agent-card">
               <div className="agent-kicker">Your AI team</div>
               <h3>{agents[agent].name}</h3>

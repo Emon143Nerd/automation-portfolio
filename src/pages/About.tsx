@@ -1,4 +1,4 @@
-import { ContactStrip } from '../components/ContactStrip'
+import { ContactIcons } from '../components/ContactIcons'
 
 export function About() {
   return (
@@ -10,7 +10,7 @@ export function About() {
           Nexa is the automation studio inside a larger agency. We design, deploy, and tune n8n-powered agents that sit
           in the tools your team already lives in — with the same visual language you’ll see across the parent brand later.
         </p>
-        <ContactStrip />
+        <ContactIcons />
       </section>
       <section className="section narrow two-col">
         <div>
