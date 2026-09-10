@@ -1,14 +1,15 @@
-export const agency = {
-  name: 'Salesfixr',
-  tagline: 'AI automation studio',
-  parentNote: 'A vertical of the agency — built to nest into the larger site later.',
+export const profile = {
+  name: 'Emon Bepari',
+  initials: 'EB',
+  title: 'AI Automation Engineer (n8n)',
+  headline: 'Expert AI automation engineer.',
 }
 
 export const contact = {
   phone: '+8801630175225',
   phoneHref: 'tel:+8801630175225',
   whatsapp: 'https://wa.me/8801630175225',
-  emails: ['bytestackpro@gmail.com', 'salesfixr@gmail.com'] as const,
+  email: 'emon99284@gmail.com',
   facebook: 'https://www.facebook.com/share/14t48hS34wa/',
 }
 
@@ -109,7 +110,7 @@ export const cases = [
     title: 'A sales desk that never drops a lead',
     result: '3.4× more same-day follow-ups',
     summary:
-      'We deployed an AI closer that reads inbound mail, scores intent, updates HubSpot, and books the first call before a human is free.',
+      'I built an n8n closer that reads inbound mail, scores intent, updates HubSpot, and books the first call before a human is free.',
   },
   {
     slug: 'helix-ops',

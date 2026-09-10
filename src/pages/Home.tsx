@@ -10,6 +10,7 @@ import {
   howSteps,
   integrations,
   logos,
+  profile,
   stats,
 } from '../data'
 
@@ -29,18 +30,19 @@ export function Home() {
       <section className="hero">
         <div className="hero-grid">
           <div className="hero-copy">
-            <span className="eyebrow">From inbox to outcome</span>
+            <span className="eyebrow">Portfolio · n8n specialist</span>
             <h1>
-              AI Workforce.
+              {profile.headline}
               <br />
-              Built for Business Teams.
+              Built on n8n.
             </h1>
             <p className="lede">
-              They read, write and act across CRM, email and chat — so your staff don’t have to.
+              I’m {profile.name}, an {profile.title}. I design, ship, and tune production workflows that read, write, and
+              act across CRM, email, and chat — so your team can stay on judgment, not busywork.
             </p>
             <div className="hero-actions">
               <Link className="coral-btn" to="/book">
-                Contact us
+                Book a call
               </Link>
               <a className="ghost-btn" href={contact.whatsapp} target="_blank" rel="noreferrer">
                 WhatsApp
@@ -98,8 +100,8 @@ export function Home() {
           <span className="eyebrow">Orchestrated in n8n</span>
           <h2>Every agent runs on a living workflow.</h2>
           <p className="lede">
-            We design, deploy, and tune n8n graphs that move work between mail, CRM, chat, and your AI models — with a
-            human checkpoint wherever judgment still matters.
+            I design, deploy, and tune n8n graphs that move work between mail, CRM, chat, and your models — with a human
+            checkpoint wherever judgment still matters.
           </p>
           <ul className="n8n-points">
             <li>Trigger from Gmail, Slack, forms, or webhooks</li>
@@ -119,8 +121,8 @@ export function Home() {
             <span className="eyebrow">From inbox to outcome</span>
             <h2 className="display">See how your AI team gets the job done.</h2>
             <p className="lede">
-              Salesfixr deploys dedicated agents into the tools you already run — giving the business real-time intelligence,
-              automation, and a clean audit trail.
+              I deploy dedicated agents into the tools you already run — real-time intelligence, automation, and a clean
+              audit trail.
             </p>
             <div className="accordion">
               {howSteps.map((item, i) => (
@@ -160,7 +162,7 @@ export function Home() {
       </section>
 
       <section className="section narrow">
-        <span className="eyebrow">Why Salesfixr</span>
+        <span className="eyebrow">Why work with me</span>
         <h2 className="display tight">Key features that power a smarter operation</h2>
         <p className="lede">
           Task-specific agents drop into your workflow — handling conversations, quotes, reporting, and internal

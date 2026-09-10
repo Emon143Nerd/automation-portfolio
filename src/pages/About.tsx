@@ -1,31 +1,36 @@
 import { ContactIcons } from '../components/ContactIcons'
+import { profile } from '../data'
 
 export function About() {
   return (
     <main>
       <section className="page-hero">
         <span className="eyebrow">About</span>
-        <h1>An AI workforce, designed like a product.</h1>
+        <h1>
+          {profile.name}
+          <br />
+          {profile.title}
+        </h1>
         <p className="lede">
-          Salesfixr is the automation studio inside a larger agency. We design, deploy, and tune n8n-powered agents that sit
-          in the tools your team already lives in — with the same visual language you’ll see across the parent brand later.
+          I am an expert AI automation engineer focused on n8n. I take messy inboxes, CRM loops, and ops handoffs and turn
+          them into reliable workflows with human checkpoints — production systems, not demo graphs.
         </p>
         <ContactIcons />
       </section>
       <section className="section narrow two-col">
         <div>
-          <h2>What we believe</h2>
+          <h2>How I work</h2>
           <p className="lede">
-            Automation should feel calm, corporate, and obvious in under ten seconds. If an operator needs a workshop to
-            understand the agent, the design failed.
+            Automation should be obvious in under ten seconds. If an operator needs a workshop to understand the agent,
+            the design failed.
           </p>
         </div>
         <div className="use-grid" style={{ gridTemplateColumns: '1fr 1fr' }}>
           {[
             ['Discover', 'Map the messy work: inboxes, handoffs, and the tribal rules nobody wrote down.'],
             ['Design', 'Name the agents, the triggers, and the human checkpoints before a single workflow ships.'],
-            ['Deploy', 'Connect the stack, instrument the loop, and watch the first week of live traffic.'],
-            ['Tune', 'Keep a weekly cadence. Agents improve the same way teams do — with notes, not magic.'],
+            ['Deploy', 'Connect the stack in n8n, instrument the loop, and watch the first week of live traffic.'],
+            ['Tune', 'Keep a weekly cadence. Workflows improve the same way teams do — with notes, not magic.'],
           ].map(([title, body]) => (
             <article className="tile" key={title}>
               <h3>{title}</h3>

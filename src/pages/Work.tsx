@@ -5,10 +5,9 @@ export function Work() {
     <main>
       <section className="page-hero">
         <span className="eyebrow">Work</span>
-        <h1>Business systems, running themselves.</h1>
+        <h1>Systems I have put on autopilot.</h1>
         <p className="lede">
-          A short set of engagements that show how Salesfixr agents take over follow-ups, intake, and finance ops — without a
-          freight or logistics story in sight.
+          Selected n8n engagements — follow-ups, intake, and finance ops — from my work as an AI automation engineer.
         </p>
       </section>
       <section className="section narrow">

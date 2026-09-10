@@ -37,8 +37,7 @@ function IconFacebook() {
 export const contactItems = [
   { id: 'phone', href: contact.phoneHref, label: 'Call', icon: <IconPhone />, external: false },
   { id: 'whatsapp', href: contact.whatsapp, label: 'WhatsApp', icon: <IconWhatsApp />, external: true },
-  { id: 'studio', href: `mailto:${contact.emails[0]}`, label: contact.emails[0], icon: <IconMail />, external: false },
-  { id: 'sales', href: `mailto:${contact.emails[1]}`, label: contact.emails[1], icon: <IconMail />, external: false },
+  { id: 'mail', href: `mailto:${contact.email}`, label: contact.email, icon: <IconMail />, external: false },
   { id: 'facebook', href: contact.facebook, label: 'Facebook', icon: <IconFacebook />, external: true },
 ]
 

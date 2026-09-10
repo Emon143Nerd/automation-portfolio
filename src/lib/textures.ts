@@ -21,7 +21,7 @@ export function labelTexture(label: string, fg = '#F7F2EA', bg = '#1E2A44') {
     ctx.fillRect(0, 0, 512, 256)
   }
   ctx.fillStyle = fg
-  ctx.font = '700 72px "Plus Jakarta Sans", system-ui, sans-serif'
+  ctx.font = '600 72px Inter, system-ui, sans-serif'
   ctx.textAlign = 'center'
   ctx.textBaseline = 'middle'
   ctx.fillText(label, 256, 128)

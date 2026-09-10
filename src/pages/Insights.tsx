@@ -7,7 +7,7 @@ export function Insights() {
         <span className="eyebrow">Insights</span>
         <h1>Notes from the automation floor.</h1>
         <p className="lede">
-          Short field notes on deploying agents inside real companies — written for operators, not model-watchers.
+          Field notes from deploying n8n agents inside real companies — written for operators, not model-watchers.
         </p>
       </section>
       <section className="section narrow">

@@ -1,25 +1,27 @@
-# Salesfixr — AI Automation Portfolio
+# Emon Bepari — AI Automation Portfolio
 
-Interactive agency portfolio for **AI automation for businesses**, with workflows orchestrated in **n8n**. Cream, navy, and coral visual language; 3D hero and an n8n node graph on the homepage. Built to nest into a larger agency site later.
+Personal portfolio for **Emon Bepari**, an expert **AI Automation Engineer (n8n)**. Interactive 3D homepage, n8n workflow scene, and a professional Inter / Tailwind-inspired UI.
 
 **Repo:** [Emon143Nerd/automation-portfolio](https://github.com/Emon143Nerd/automation-portfolio)
 
 ## Stack
 
 - Vite 8, React 19, TypeScript
+- Tailwind CSS v4
 - React Router
 - Three.js via React Three Fiber + Drei
+- Inter (Google Fonts)
 
 ## Pages
 
 | Route | Purpose |
 | --- | --- |
-| `/` | Home — 3D hero, n8n workflow scene, how it works, features, selected work |
-| `/about` | Studio positioning and process |
+| `/` | Home — 3D hero, n8n graph, how it works, features, selected work |
+| `/about` | Background and process |
 | `/work` | Case-style engagements |
-| `/use-cases` | Automation loops we install |
-| `/insights` | Short field notes |
-| `/book` | Demo request plus direct contact |
+| `/use-cases` | Automation loops |
+| `/insights` | Field notes |
+| `/book` | Book a call |
 
 ## Run locally
 
@@ -41,24 +43,24 @@ npm run preview
 
 ## Contact
 
-The phone number is not shown in the UI. Open the contact icon in the header to reach Call, WhatsApp, email, and Facebook. A WhatsApp button stays on the home hero and as a floating action.
+The phone number is not shown in the UI. Use the header contact icon for Call, WhatsApp, email, and Facebook.
 
 | | |
 | --- | --- |
 | WhatsApp | [Chat on WhatsApp](https://wa.me/8801630175225) |
-| Email | [bytestackpro@gmail.com](mailto:bytestackpro@gmail.com), [salesfixr@gmail.com](mailto:salesfixr@gmail.com) |
+| Email | [emon99284@gmail.com](mailto:emon99284@gmail.com) |
 | Facebook | [facebook.com/share/14t48hS34wa](https://www.facebook.com/share/14t48hS34wa/) |
 
-Copy lives in `src/data.ts`. Icons and the header menu are in `src/components/ContactIcons.tsx`.
+Profile and contact live in `src/data.ts`.
 
 ## Layout
 
 - `src/pages/` — routes
-- `src/components/HeroScene.tsx` — homepage 3D ring and cubes
-- `src/components/N8nScene.tsx` — interactive n8n graph
-- `src/components/ContactIcons.tsx` — header contact menu and icon links
-- `src/index.css` — design tokens and responsive layout
+- `src/components/HeroScene.tsx` — homepage 3D
+- `src/components/N8nScene.tsx` — n8n graph
+- `src/components/ContactIcons.tsx` — header contact menu
+- `src/index.css` — tokens, Tailwind, layout
 
 ## Deploy
 
-This is a static Vite app. Build with `npm run build` and host the `dist/` folder (GitHub Pages, Netlify, Vercel, or any static host). For GitHub Pages, set Vite `base` in `vite.config.ts` if the site is not served from the domain root.
+Static Vite app. Build with `npm run build` and host `dist/`.

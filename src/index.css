@@ -1,19 +1,21 @@
+@import "tailwindcss";
+
 :root {
-  --bg: #f3eee6;
-  --bg-elev: #faf7f2;
-  --ink: #16181d;
-  --muted: #6b6560;
-  --line: rgba(22, 24, 29, 0.08);
-  --navy: #1e2a44;
-  --navy-2: #2a3b5c;
-  --navy-soft: #3d4d6c;
-  --coral: #e07a52;
-  --coral-2: #c96540;
+  --bg: #f7f7f5;
+  --bg-elev: #ffffff;
+  --ink: #18181b;
+  --muted: #71717a;
+  --line: rgba(24, 24, 27, 0.1);
+  --navy: #18181b;
+  --navy-2: #27272a;
+  --navy-soft: #3f3f46;
+  --coral: #2563eb;
+  --coral-2: #1d4ed8;
   --white: #ffffff;
-  --shadow: 0 18px 50px rgba(30, 42, 68, 0.12);
-  --radius: 22px;
+  --shadow: 0 10px 30px rgba(24, 24, 27, 0.08);
+  --radius: 12px;
   --nav-h: 88px;
-  --font: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font: Inter, ui-sans-serif, system-ui, sans-serif;
   color: var(--ink);
   background: var(--bg);
   font-family: var(--font);
@@ -88,7 +90,7 @@ img {
 
 .cursor.is-hover {
   transform: scale(1.7);
-  background: rgba(224, 122, 82, 0.22);
+  background: rgba(37, 99, 235, 0.16);
   border-color: var(--coral);
 }
 
@@ -132,15 +134,15 @@ img {
 .logo {
   display: grid;
   place-items: center;
-  width: 46px;
-  height: 46px;
-  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
   background: var(--navy);
   color: var(--bg);
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  box-shadow: 0 8px 20px rgba(30, 42, 68, 0.18);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  box-shadow: none;
 }
 
 .nav-links {
@@ -154,22 +156,23 @@ img {
 .ghost-btn,
 .solid-btn,
 .coral-btn {
-  border-radius: 999px;
-  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 8px;
+  transition: transform 0.15s ease, background 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
 }
 
 .nav-links a {
-  padding: 10px 14px;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--ink);
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--muted);
 }
 
 .nav-links a:hover,
 .nav-links a.active {
-  background: rgba(30, 42, 68, 0.06);
+  background: rgba(24, 24, 27, 0.06);
+  color: var(--ink);
 }
 
 .chip {
@@ -198,25 +201,30 @@ img {
 }
 
 .ghost-btn {
-  padding: 11px 18px;
+  padding: 9px 16px;
   background: var(--white);
   color: var(--ink);
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  box-shadow: 0 8px 24px rgba(30, 42, 68, 0.08);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+  border: 1px solid var(--line);
+  box-shadow: none;
 }
 
 .coral-btn {
-  padding: 13px 22px;
-  background: var(--coral);
+  padding: 9px 16px;
+  background: var(--ink);
   color: var(--white);
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  box-shadow: 0 10px 24px rgba(224, 122, 82, 0.28);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+  box-shadow: none;
+}
+
+.coral-btn:hover {
+  background: #27272a;
 }
 
 .coral-btn:hover,
@@ -227,12 +235,12 @@ img {
 
 .menu-btn {
   display: none;
-  width: 46px;
-  height: 46px;
-  border: 0;
-  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
   background: var(--white);
-  box-shadow: var(--shadow);
+  box-shadow: none;
 }
 
 .hero {
@@ -279,9 +287,9 @@ img {
 .eyebrow {
   display: inline-block;
   margin-bottom: 18px;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.16em;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--coral);
 }
@@ -745,13 +753,13 @@ h1 {
 .contact-trigger {
   display: grid;
   place-items: center;
-  width: 46px;
-  height: 46px;
-  border: 0;
-  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
   background: var(--white);
   color: var(--navy);
-  box-shadow: 0 8px 24px rgba(30, 42, 68, 0.08);
+  box-shadow: none;
   cursor: pointer;
 }
 
